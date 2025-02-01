@@ -2,28 +2,29 @@ import 'package:enpal_assignment/themes/dark_theme.dart';
 import 'package:enpal_assignment/themes/light_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 MaterialColor hexColor2MaterialColor({Color? color, int? hexColor}) {
   final lColor = color ?? Color(hexColor!);
   final lHexColor = hexColor ?? colorToInt(colorToHex(lColor));
 
-  final r = lColor.red;
-  final g = lColor.green;
-  final b = lColor.blue;
+  final r = lColor.r;
+  final g = lColor.g;
+  final b = lColor.b;
 
   return MaterialColor(
     lHexColor,
     <int, Color>{
-      50: Color.fromRGBO(r, g, b, .1),
-      100: Color.fromRGBO(r, g, b, .2),
-      200: Color.fromRGBO(r, g, b, .3),
-      300: Color.fromRGBO(r, g, b, .4),
-      400: Color.fromRGBO(r, g, b, .5),
-      500: Color.fromRGBO(r, g, b, .6),
-      600: Color.fromRGBO(r, g, b, .7),
-      700: Color.fromRGBO(r, g, b, .8),
-      800: Color.fromRGBO(r, g, b, .9),
-      900: Color.fromRGBO(r, g, b, 1),
+      50: Color.from(alpha: 0.1, red: r, green: g, blue: b),
+      100: Color.from(alpha: 0.2, red: r, green: g, blue: b),
+      200: Color.from(alpha: 0.3, red: r, green: g, blue: b),
+      300: Color.from(alpha: 0.4, red: r, green: g, blue: b),
+      400: Color.from(alpha: 0.5, red: r, green: g, blue: b),
+      500: Color.from(alpha: 0.6, red: r, green: g, blue: b),
+      600: Color.from(alpha: 0.7, red: r, green: g, blue: b),
+      700: Color.from(alpha: 0.8, red: r, green: g, blue: b),
+      800: Color.from(alpha: 0.9, red: r, green: g, blue: b),
+      900: Color.from(alpha: 1, red: r, green: g, blue: b),
     },
   );
 }
@@ -43,15 +44,7 @@ bool isDarkMode() {
 
 /// Prefixes a hash sign if [leadingHashSign] is set to `true` (default is `true`).
 String colorToHex(Color color, {bool leadingHashSign = false}) {
-  final r = color.red;
-  final g = color.green;
-  final b = color.blue;
-  final a = color.alpha;
-  return '${leadingHashSign ? '#' : ''}'
-      '${a.toRadixString(16).padLeft(2, '0')}'
-      '${r.toRadixString(16).padLeft(2, '0')}'
-      '${g.toRadixString(16).padLeft(2, '0')}'
-      '${b.toRadixString(16).padLeft(2, '0')}';
+  return color.toHex();
 }
 
 int colorToInt(String hexColor) {

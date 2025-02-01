@@ -76,7 +76,7 @@ class LightTheme {
       fontWeight: FontWeight.w500,
     ),
     hintStyle: _textTheme.titleMedium?.copyWith(
-      color: _textColor.withOpacity(0.5607843137254902),
+      color: _textColor..withValues(alpha:0.5607843137254902),
       fontWeight: FontWeight.w500,
     ),
     errorStyle: _textTheme.titleMedium?.copyWith(
@@ -85,7 +85,7 @@ class LightTheme {
       fontWeight: FontWeight.w500,
     ),
     focusedBorder: UnderlineInputBorder(
-      borderSide: BorderSide(color: _primaryColor.withOpacity(0.5), width: 1),
+      borderSide: BorderSide(color: _primaryColor..withValues(alpha:0.5), width: 1),
     ),
     enabledBorder: const UnderlineInputBorder(
       borderSide: BorderSide(color: Color(0xFFF8F8FC), width: 1),
@@ -174,8 +174,8 @@ class LightTheme {
       ),
     ),
     colorScheme: ColorScheme.fromSwatch(primarySwatch: _primarySwatch).copyWith(
-      background: _backgroundColor,
-      onBackground: const Color(0xFF2e2e2e),
+      surface: _backgroundColor,
+      onSurface: const Color(0xFF2e2e2e),
       primary: _primaryColor,
       onPrimary: const Color(0xFFeeeeee),
       brightness: Brightness.light,
