@@ -6,7 +6,7 @@ import 'package:dio/dio.dart';
 
 part 'api_service.g.dart';
 
-@RestApi(baseUrl: "http://192.168.70.237:3000/")
+@RestApi(baseUrl: "http://192.168.255.237:3000/")
 @lazySingleton
 abstract class ApiService {
   static late Dio globalDio;
@@ -15,7 +15,6 @@ abstract class ApiService {
   static ApiService create(Dio dio) {
     var retrofit = ApiService(dio);
     globalDio = dio;
-    // dio.interceptors.add(PrettyDioLogger.initialTab)
     return retrofit;
   }
 
@@ -26,4 +25,5 @@ abstract class ApiService {
     @Query("date") required String date,
     @Query("type") required String type,
   });
+
 }

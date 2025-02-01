@@ -18,9 +18,10 @@ class Env {
     debugShowCheckedModeBanner: false,
     debugShowMaterialGrid: false,
     debugApiClient: true,
+    useMockedApi: true,
     // apiBaseUrl: ApiConfiguration.propertyManBaseUrl,
     // apiBaseUrl: "http://localhost:3000/",
-    apiBaseUrl: "http://192.168.70.237:3000/",
+    apiBaseUrl: "http://192.168.255.237:3000/",
   );
 
   static final EnvData prod = EnvData(
@@ -28,9 +29,10 @@ class Env {
     debugShowCheckedModeBanner: false,
     debugShowMaterialGrid: false,
     debugApiClient: false,
+    useMockedApi: false,
     // apiBaseUrl: ApiConfiguration.propertyManBaseUrl,
     // apiBaseUrl: "http://localhost:3000/",
-    apiBaseUrl: "http://192.168.70.237:3000/",
+    apiBaseUrl: "http://192.168.255.237:3000/",
   );
 }
 
@@ -40,6 +42,7 @@ class EnvData {
   final bool debugShowMaterialGrid;
   final bool debugApiClient;
   final String apiBaseUrl;
+  final bool useMockedApi;
 
   EnvData({
     required this.debug,
@@ -47,5 +50,6 @@ class EnvData {
     required this.debugShowMaterialGrid,
     required this.debugApiClient,
     required this.apiBaseUrl,
+    required this.useMockedApi,
   });
 }
