@@ -12,12 +12,13 @@
     2. [Step 2: Configure the Integration]
     3. [Step 3: Test the Integration]
 4. [Features]
-5. [En]
-6. [Authentication]
-7. [API Reference]
-8. [Common Errors & Troubleshooting]
-9. [FAQs]
-10. [Support]
+5. [Enhancements]
+6. [Demo]
+7. [Authentication]
+8. [API Reference]
+9. [Common Errors & Troubleshooting]
+10. [FAQs]
+11. [Support]
 
 ---
 
@@ -80,6 +81,20 @@ Start by installing the required dependencies to your project.
     08-The application supports multiple languages
     09-The application supports dark and light themes
     10-Add data polling option.
+
+## Enhancements
+  
+  01-Adding pull and refresh option.
+  02-I’ve added a toolbar action for force refresh to avoid nested scroll while the graph is scrollable and zoomable.
+  03-Enhance the mechanism for polling by adding diffUtil if the data is already updated hence diffUtil can compare between two lists.
+  04-In the solution I've tried to make the code as simple as I can avoid creating multiple modules.
+  05-I’ve added comments to clarify and explain the project.
+  06-The unit tests need enhancement as well.
+  07-If the filters were more complex I would implement Riverpod.
+
+## Demo
+
+    
 
 ## Authorization
 
