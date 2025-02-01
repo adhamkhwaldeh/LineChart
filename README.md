@@ -12,11 +12,12 @@
     2. [Step 2: Configure the Integration]
     3. [Step 3: Test the Integration]
 4. [Features]
-5. [Authentication]
-6. [API Reference]
-7. [Common Errors & Troubleshooting]
-8. [FAQs]
-9. [Support]
+5. [En]
+6. [Authentication]
+7. [API Reference]
+8. [Common Errors & Troubleshooting]
+9. [FAQs]
+10. [Support]
 
 ---
 
