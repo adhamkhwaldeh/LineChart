@@ -101,6 +101,9 @@ Start by installing the required dependencies to your project.
   ![Dashboard View](./screenshots/dashboard.png)
   *A snapshot of the dashboard after integration.*
 
+  ![Dashboard View](./screenshots/dashboard.png)
+  *A snapshot of the dashboard after integration.*
+
 ## Authorization
 
 No authorization is required here
