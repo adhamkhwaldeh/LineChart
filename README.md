@@ -94,7 +94,12 @@ Start by installing the required dependencies to your project.
 
 ## Demo
 
-    
+### Screenshots
+
+- **Dashboard View**
+
+  ![Dashboard View](./screenshots/dashboard.png)
+  *A snapshot of the dashboard after integration.*
 
 ## Authorization
 
