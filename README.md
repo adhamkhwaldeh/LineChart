@@ -4,98 +4,98 @@
 # Integration Guide: Line chart
 
 ## Table of Contents
+
 1. [Introduction]
 2. [Prerequisites]
 3. [Setup Instructions]
-    1. [Step 1: Install Dependencies]
+    1. [Step 1: Setup the environment]
     2. [Step 2: Configure the Integration]
     3. [Step 3: Test the Integration]
-4. [Authentication]
-5. [API Reference]
-6. [Common Errors & Troubleshooting]
-7. [FAQs]
-8. [Support]
+4. [Features]
+5. [Authentication]
+6. [API Reference]
+7. [Common Errors & Troubleshooting]
+8. [FAQs]
+9. [Support]
 
 ---
 
 ## Introduction
 
-This guide provides step-by-step instructions for integrating [Weather Sdk] into your project.
-Follow the instructions to quickly get started and connect your system with [Weather Sdk].
+This guide provides step-by-step instructions for integrating [Line chart] into your project.
+Follow the instructions to quickly get started and connect your system with [Line chart].
 
 ---
 
 ## Prerequisites
+
 Before you begin the integration process, make sure you have the following:
+
 - A ApiKey service from Line chart
 - Access to your [system’s] configuration settings
 
 ## Setup Instructions
 
-### Step 1: Install Dependencies
-Start by installing the required dependencies to your project.
-Use one of the following commands based on your package manager.
-use Gradle:
+    - Use Visual studio code and any preferable IDE
+    - Flutter (Channel stable, 3.27.3)
+    - Android Studio (version 2024.2)
+    - Android devices (Android SDK version 35.0.0)
 
-       repositories {
-           google()
-           mavenCentral()
-       }
-       
-       dependencies {
-          implementation 'com.gini.weatherSdk:latest'
-       }
+### Step 1: Install Dependencies
+
+Start by installing the required dependencies to your project.
+    - Flutter pub get
 
 ### Step 2: Configure the Integration
 
-Next, you’ll need to configure your integration settings.
-Add the following details in your application class .
-WeatherGiniSDKBuilder.initialize(
-this,
-"your api key"
-)
+    You can use the fixed data in the application or create api service to match the solution.
+    Within class Env you have a useMockedApi property.
+
+    To use mocked data set useMockedApi = true as it is by default.
+        static final EnvData dev = EnvData(
+            debug: true,
+            debugShowCheckedModeBanner: false,
+            debugShowMaterialGrid: false,
+            debugApiClient: true,
+            useMockedApi: true,
+            // apiBaseUrl: ApiConfiguration.propertyManBaseUrl,
+            // apiBaseUrl: "http://localhost:3000/",
+            apiBaseUrl: "http://192.168.255.237:3000/",
+        );
+
 ### Step 3: Test the Integration
 
-#### Update sdk status to launch
-        WeatherGiniSDKBuilder.sdkStatus.value =
-                            WeatherSdkStatus.OnLaunchForecast(cityName)
+   Just run Run the application on your device or browser.
 
-#### Observe SDK status and replace it with  ForecastScreenFragment
-     WeatherGiniSDKBuilder.sdkStatus.observe(this) {
-            if (it is WeatherSdkStatus.OnFinish) {
-                replace(EnterCityScreenFragment(), EnterCityScreenFragment::class.java.name)
-            } else if (it is WeatherSdkStatus.OnLaunchForecast) {
-                replace(
-                    ForecastScreenFragment.newInstance(it.cityName),
-                    ForecastScreenFragment::class.java.name
-                )
-            }
-        }
+## Features
 
-#### Observe SDK status and replace it with ForecastScreen if you are using compose
-    val sdkStatus = WeatherGiniSDKBuilder.sdkStatus.observeAsState()
-    LaunchedEffect(sdkStatus.value) {
-        val current = sdkStatus.value
-        if (current is WeatherSdkStatus.OnFinish) {
-            navController.navigateUp()
-        } else if (current is WeatherSdkStatus.OnLaunchForecast) {
-            navController.navigate(NavigationItem.forecastRouteWithParams(current.cityName))
-        }
-    }
-
-#### You can replace ForecastScreenFragment.newInstance(it.cityName) or ForecastScreen compose directly
+    01-Graph and Data Visualization (required design)
+    02-Fetch the data
+    03-Filter by date
+    04-Add switch unit for Watt and KiloWatt
+    05-Cache the data according to the criteria ( metric and date)
+    06-Add refresh action (with force update) to cover pull and refresh functionality and clear the data.
+    07-Cover error messages and connectivity by showing clear messages and refresh options for some cases.
+    08-The application supports multiple languages
+    09-The application supports dark and light themes
+    10-Add data polling option.
 
 ## Authorization
-You need to get Gini Weather Api key (e.g register to website )
+
+No authorization is required here
 
 ## Api reference
+
 You have to create your own api or use mocked data
 
 ## Common Errors & Troubleshooting
-https://github.com/adhamkhwaldeh/LineChart/issues
+
+<https://github.com/adhamkhwaldeh/LineChart/issues>
 
 ## FAQs
-https://github.com/adhamkhwaldeh/LineChart/issues
+
+<https://github.com/adhamkhwaldeh/LineChart/issues>
 
 ## Support
-https://github.com/adhamkhwaldeh/LineChart
+
+<https://github.com/adhamkhwaldeh/LineChart>
