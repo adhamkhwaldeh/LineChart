@@ -41,6 +41,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/.gradle/
 
 # See https://www.dartlang.org/guides/libraries/private-files
 
@@ -69,3 +70,5 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+/demos/
