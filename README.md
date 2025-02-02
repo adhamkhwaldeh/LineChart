@@ -119,6 +119,10 @@ Start by installing the required dependencies to your project.
   ![Dashboard View](./demos/Enpal_online_polling_Screenrecorder.mp4)
   *A snapshot of the dashboard after integration.*
 
+  <video src="./demos/Enpal_offline_Screenrecorder.mp4" controls width="600"></video>
+
+  <video src="./demos/Enpal_online_polling_Screenrecorder.mp4" controls width="600"></video>=
+
 ## Authorization
 
 No authorization is required here
