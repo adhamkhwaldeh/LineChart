@@ -106,9 +106,7 @@ Start by installing the required dependencies to your project.
 
 ### Videos
 
-|-----------------|-----------------|
-
-|[![Watch the video](./demos/Enpal_online_polling_Screenrecorder.mp4)](https://drive.google.com/file/d/17zkwo6dgPVkaYr335AIXtbl-MeYYX-No/view?usp=drive_link) | [![Watch the video](./demos/Enpal_online_polling_Screenrecorder.mp4)](https://drive.google.com/file/d/1hpAOUghNJHzyd0IuBiU8yonDpjIztM0N/view?usp=drive_link) |
+|[![Watch the video 1]()](https://drive.google.com/file/d/17zkwo6dgPVkaYr335AIXtbl-MeYYX-No/view?usp=drive_link) | [![Watch the video 2]()](https://drive.google.com/file/d/1hpAOUghNJHzyd0IuBiU8yonDpjIztM0N/view?usp=drive_link) |
 |-----------------|-----------------|  
   <!-- ![Dashboard View](./demos/Screenshot_2025-02-01-13-40-48-016_com.enpal.assignment.enpal_assignment.jpg)
   *A snapshot of the dashboard after integration.*
@@ -130,7 +128,6 @@ Start by installing the required dependencies to your project.
 
   ![Dashboard View](./demos/Enpal_online_polling_Screenrecorder.mp4)
   *A snapshot of the dashboard after integration.* -->
-
 
   <!-- <video src="./demos/Enpal_online_polling_Screenrecorder.mp4" controls width="600"></video> -->
 
