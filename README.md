@@ -84,13 +84,13 @@ Start by installing the required dependencies to your project.
 
 ## Enhancements
   
-  01-Adding pull and refresh option.
-  02-I’ve added a toolbar action for force refresh to avoid nested scroll while the graph is scrollable and zoomable.
-  03-Enhance the mechanism for polling by adding diffUtil if the data is already updated hence diffUtil can compare between two lists.
-  04-In the solution I've tried to make the code as simple as I can avoid creating multiple modules.
-  05-I’ve added comments to clarify and explain the project.
-  06-The unit tests need enhancement as well.
-  07-If the filters were more complex I would implement Riverpod.
+    01-Adding pull and refresh option.
+    02-I’ve added a toolbar action for force refresh to avoid nested scroll while the graph is scrollable and zoomable.
+    03-Enhance the mechanism for polling by adding diffUtil if the data is already updated hence diffUtil can compare between two lists.
+    04-In the solution I've tried to make the code as simple as I can avoid creating multiple modules.
+    05-I’ve added comments to clarify and explain the project.
+    06-The unit tests need enhancement as well.
+    07-If the filters were more complex I would implement Riverpod.
 
 ## Demo
 
