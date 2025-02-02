@@ -8,7 +8,7 @@ part 'monitoring_model.g.dart';
 @JsonSerializable()
 class MonitoringModel {
   String timestamp;
-  int value;
+  num value;
 
   DateTime get dateTime {
     try {

@@ -9,7 +9,7 @@ part of 'monitoring_model.dart';
 MonitoringModel _$MonitoringModelFromJson(Map<String, dynamic> json) =>
     MonitoringModel(
       timestamp: json['timestamp'] as String,
-      value: (json['value'] as num).toInt(),
+      value: (json['value'] as num),
     );
 
 Map<String, dynamic> _$MonitoringModelToJson(MonitoringModel instance) =>

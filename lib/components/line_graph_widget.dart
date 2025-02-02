@@ -22,14 +22,6 @@ class LineGraphWidget extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    //New instance of MonitoringBloc to avoid any conflict
-    // final bloc = useMemoized(
-    //   () => MonitoringBloc(
-    //     getIt<MonitoringRepository>(),
-    //     getIt<CacheRepository>(),
-    //   ),
-    // );
-
     useEffect(() {
       bloc.add(BaseEventPollingForMonitoring(monitoringFilter));
       return () {
@@ -38,17 +30,7 @@ class LineGraphWidget extends HookWidget {
       };
     }, []);
 
-    return
-        // BlocBuilder<MonitoringBloc, BaseState<MonitoringModel>>(
-        //   bloc: bloc,
-        //   builder: (context, state) {
-        //     var updatedData = data;
-        //     if (state is BaseStateListLoadedSuccessfully) {
-        //       updatedData = (state as BaseStateListLoadedSuccessfully).data
-        //           as List<MonitoringModel>;
-        //     }
-        //     return
-        SfCartesianChart(
+    return SfCartesianChart(
       selectionType: SelectionType.series,
       zoomPanBehavior: ZoomPanBehavior(
         enablePanning: true,
@@ -98,7 +80,7 @@ class LineGraphWidget extends HookWidget {
         // ColumnSeries<MonitoringModel, DateTime>(
 
         // Renders line chart
-        LineSeries<MonitoringModel, DateTime>(
+        FastLineSeries<MonitoringModel, DateTime>(
           dataSource: data,
           xValueMapper: (MonitoringModel monitoring, _) => monitoring.dateTime,
           yValueMapper: (MonitoringModel monitoring, _) =>
@@ -124,7 +106,5 @@ class LineGraphWidget extends HookWidget {
         ),
       ],
     );
-    // },
-    // );
   }
 }
