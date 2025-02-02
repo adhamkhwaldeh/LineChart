@@ -98,10 +98,10 @@ Start by installing the required dependencies to your project.
 
 - **Dashboard View**
 
-  ![Dashboard View](./screenshots/dashboard.png)
+  ![Dashboard View](./demos/Screenshot_2025-02-01-13-40-48-016_com.enpal.assignment.enpal_assignment.jpg)
   *A snapshot of the dashboard after integration.*
 
-  ![Dashboard View](./screenshots/dashboard.png)
+  ![Dashboard View](./demos/Screenshot_2025-02-01-13-40-54-138_com.enpal.assignment.enpal_assignment.jpg)
   *A snapshot of the dashboard after integration.*
 
 ## Authorization
