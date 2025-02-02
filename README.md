@@ -101,8 +101,8 @@ Start by installing the required dependencies to your project.
 | !["](./demos/Screenshot_2025-02-01-13-40-48-016_com.enpal.assignment.enpal_assignment.jpg) | !["](./demos/Screenshot_2025-02-01-13-40-54-138_com.enpal.assignment.enpal_assignment.jpg) | !["](./demos/Screenshot_2025-02-01-13-41-31-480_com.enpal.assignment.enpal_assignment.jpg) |
 |-----------------|-----------------|-----------------|
 
-!["](./demos/Screenshot_2025-02-01-13-41-37-985_com.enpal.assignment.enpal_assignment.jpg) | !["](./demos/Screenshot_2025-02-01-13-41-54-440_com.enpal.assignment.enpal_assignment.jpg) |
-|-----------------|-----------------|-----------------|
+|!["](./demos/Screenshot_2025-02-01-13-41-37-985_com.enpal.assignment.enpal_assignment.jpg) | !["](./demos/Screenshot_2025-02-01-13-41-54-440_com.enpal.assignment.enpal_assignment.jpg) |
+|-----------------|-----------------|
 
   <!-- ![Dashboard View](./demos/Screenshot_2025-02-01-13-40-48-016_com.enpal.assignment.enpal_assignment.jpg)
   *A snapshot of the dashboard after integration.*
