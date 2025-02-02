@@ -98,26 +98,32 @@ Start by installing the required dependencies to your project.
 
 - **Dashboard View**
 
-  ![Dashboard View](./demos/Screenshot_2025-02-01-13-40-48-016_com.enpal.assignment.enpal_assignment.jpg)
+| !["](./demos/Screenshot_2025-02-01-13-40-48-016_com.enpal.assignment.enpal_assignment.jpg) | !["](./demos/Screenshot_2025-02-01-13-40-54-138_com.enpal.assignment.enpal_assignment.jpg) | !["](./demos/Screenshot_2025-02-01-13-41-31-480_com.enpal.assignment.enpal_assignment.jpg) |
+|-----------------|-----------------|-----------------|
+
+| !["](./demos/Screenshot_2025-02-01-13-41-37-985_com.enpal.assignment.enpal_assignment.jpg) | !["](./demos/Screenshot_2025-02-01-13-41-54-440_com.enpal.assignment.enpal_assignment.jpg) |
+|-----------------|-----------------|-----------------|
+
+  <!-- ![Dashboard View](./demos/Screenshot_2025-02-01-13-40-48-016_com.enpal.assignment.enpal_assignment.jpg)
   *A snapshot of the dashboard after integration.*
 
   ![Dashboard View](./demos/Screenshot_2025-02-01-13-40-54-138_com.enpal.assignment.enpal_assignment.jpg)
   *A snapshot of the dashboard after integration.*
 
   ![Dashboard View](./demos/Screenshot_2025-02-01-13-41-31-480_com.enpal.assignment.enpal_assignment.jpg)
-  *A snapshot of the dashboard after integration.*
+  *A snapshot of the dashboard after integration.* -->
 
-  ![Dashboard View](./demos/Screenshot_2025-02-01-13-41-37-985_com.enpal.assignment.enpal_assignment.jpg)
+  <!-- ![Dashboard View](./demos/Screenshot_2025-02-01-13-41-37-985_com.enpal.assignment.enpal_assignment.jpg)
   *A snapshot of the dashboard after integration.*
 
   ![Dashboard View](./demos/Screenshot_2025-02-01-13-41-54-440_com.enpal.assignment.enpal_assignment.jpg)
-  *A snapshot of the dashboard after integration.*
+  *A snapshot of the dashboard after integration.* -->
 
-  ![Dashboard View](./demos/Enpal_offline_Screenrecorder.mp4)
+  <!-- ![Dashboard View](./demos/Enpal_offline_Screenrecorder.mp4)
   *A snapshot of the dashboard after integration.*
 
   ![Dashboard View](./demos/Enpal_online_polling_Screenrecorder.mp4)
-  *A snapshot of the dashboard after integration.*
+  *A snapshot of the dashboard after integration.* -->
 
   [![Watch the video](./demos/Screenshot_2025-02-01-13-41-54-440_com.enpal.assignment.enpal_assignment.jpg)](https://drive.google.com/file/d/17zkwo6dgPVkaYr335AIXtbl-MeYYX-No/view?usp=drive_link)
 
